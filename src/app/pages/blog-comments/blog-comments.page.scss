@@ -1,0 +1,82 @@
+.body
+{
+    width: 100%;
+    margin : auto;
+    color: black;
+    
+    h2
+    {
+        border-bottom: solid black 1px;
+        margin-left: 20px;
+    }
+    >#commentContainer
+    {
+        margin: auto;
+        padding: 20px;
+        
+        width: 80%;
+        height: fit-content;
+
+        border: solid black 2px;
+        border-radius: 8px;
+        background-color: ivory;
+        
+        >.comment
+        {
+            color: black;
+            text-align: justify;
+            >div
+            {
+                >p
+                {
+                    margin: 0%;
+                    &:first-child
+                    {
+                        font-weight: bold;
+                        margin-right: 20px;
+                    }
+                }
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            &:not(:last-of-type)
+            {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    >.form
+    {
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px;
+        
+        width: 75%;
+        height: fit-content;
+
+        border: solid black 2px;
+        border-radius: 8px;
+        background-color: lightblue;
+
+        display: flex;
+        flex-direction: column;
+
+        >input, >textarea
+        {
+            margin-bottom: 10px;
+        }
+        >button
+        {
+            padding: 10px;
+            background-color: lightseagreen;
+            color: white;
+            width: fit-content;
+            height: fit-content;
+
+            border-radius: 8px;
+        }
+
+    }
+}
